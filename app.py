@@ -31,7 +31,8 @@ def create_task():
     print(tasks)
     #por padrão http, é importante retornar um formato Json e o flask tem uma biblioteca para isso, o jsonify - ajuda as APIs a controlarem
     return jsonify({
-        "message": "task created successfully"
+        "message": "task created successfully",
+        "id": new_tasks.id,
     })
 
 
